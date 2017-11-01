@@ -1,34 +1,32 @@
 <template>
-    <div class="page">
-            <home-header/>
-            {{msg}}
-    </div>
+	<div class="page">
+		<home-header></home-header>
+		<home-banner></home-banner>
+	</div>
 </template>
 
 <script>
-    import Header from "./header";
+	import Header from "./header";
+	import  Banner from "./banner";
+	import HomeBanner from "./banner.vue";
 
-    export default {
-        data() {
-                return {
-                        msg: 'hello'
-                }
-        },
-        components: {
-                "home-header": Header
-        }
+	export default {
+		components: {
+			HomeBanner,
+			"home-header": Header,
+			"home-banner": Banner
+		}
 
-
-    }
+	}
 </script>
 
 <style scoped>
-    .page {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            min-height: 100%;
-            background: #f5f5f5;
-    }
+	.page {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		min-height: 100%;
+		background: #f5f5f5;
+	}
 </style>

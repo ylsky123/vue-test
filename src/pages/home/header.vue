@@ -6,6 +6,7 @@
 			<span class="single-line">输入城市/景点/游玩主题</span>
 		</div>
 		<div class="header-right">
+			 <!---->
                         <span class="nav-city">北京
                                 <i class="downarrow"></i>
                         </span>
@@ -17,11 +18,7 @@
 <script>
 
 	export default {
-		data() {
-			return {
-				msg: 'header123',
-			}
-		}
+
 	}
 </script>
 
