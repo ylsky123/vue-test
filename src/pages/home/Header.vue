@@ -16,7 +16,6 @@
 </template>
 
 <script>
-
 	export default {
 
 	}
@@ -24,7 +23,6 @@
 
 <style>
 	@import '../iconfont/iconfont.css';
-
 	.header {
 		position: relative;
 		width: 100%;

@@ -5,7 +5,7 @@
 			<swiper-slide v-for="item in items" :key="item.id" >
 				<img :src="item.url" class="swiper-image">
 			</swiper-slide>
-			<div class="swiper-pagination" slot="pagination"></div>
+			<div class="swiper-pagination"  slot="pagination"></div>
 		</swiper>
 	</div>
 </template>
@@ -66,10 +66,18 @@
 
 </script>
 
-<style scoped>
-	@import "../../../node_modules/swiper/dist/css/swiper.min.css";
-	.swiper-box .swiper-image{
+<style >
+
+	.swiper-box{
+		width:100%;
+		height:0;
+		padding-bottom:31.25%;
+	}
+	.swiper-image{
 		width:100%;
 	}
 
+	.swiper-pagination .swiper-pagination-bullet-active {
+		background:#fff;
+	}
 </style>

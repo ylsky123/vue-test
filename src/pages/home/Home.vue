@@ -6,12 +6,11 @@
 </template>
 
 <script>
-	import Header from "./header";
-	import Banner from "./banner";
-
+	import Header from "./Header";
+	import Banner from "./Banner";
+	import "../../../node_modules/swiper/dist/css/swiper.min.css";
 	export default {
 		components: {
-			HomeBanner,
 			"home-header": Header,
 			"home-banner": Banner
 		}
