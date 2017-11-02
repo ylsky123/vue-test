@@ -7,22 +7,21 @@
 		</div>
 		<div class="header-right">
 
-                        <div>
-	                        <span  class="nav-city">乌鲁木齐</span>
-                                <i class="downarrow"></i>
-                        </div>
+			<div>
+				<span class="nav-city">乌鲁木齐</span>
+				<i class="downarrow"></i>
+			</div>
 		</div>
 	</div>
 </template>
 
 <script>
-	export default {
-
-	}
+	export default {}
 </script>
 
 <style>
-	@import '../iconfont/iconfont.css';
+	@import '../../../static/iconfont/iconfont.css';
+
 	.header {
 		position: relative;
 		width: 100%;
@@ -41,7 +40,6 @@
 		font-size: .36rem;
 		text-align: left;
 	}
-
 
 	.header-title {
 		position: absolute;
@@ -64,23 +62,25 @@
 		height: 100%;
 		line-height: .88rem;
 	}
-	.nav-city{
+
+	.nav-city {
 		float: left;
-		display:block;
-		width:.6rem;
-		height:.88rem;
-		line-height:.88rem;
-		margin:0 .1rem;
+		display: block;
+		width: .6rem;
+		height: .88rem;
+		line-height: .88rem;
+		margin: 0 .1rem;
 		overflow: hidden;
-		text-overflow:ellipsis;
+		text-overflow: ellipsis;
 		white-space: nowrap;
 	}
+
 	.downarrow {
-		float:left;
+		float: left;
 		display: inline-block;
 		width: 0;
 		height: 0;
-		margin-top:.4rem;
+		margin-top: .4rem;
 		border-left: .12rem solid transparent;
 		border-right: .12rem solid transparent;
 		border-top: .12rem solid #fff;

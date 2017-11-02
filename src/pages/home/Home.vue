@@ -2,6 +2,10 @@
 	<div class="page">
 		<home-header></home-header>
 		<home-banner></home-banner>
+		<router-link to="/list">list</router-link>
+		<router-link to="/detail">detail</router-link>
+		<router-link to="/tourlist">tourlist</router-link>
+		<router-link to="/tourdetail">toudetail</router-link>
 	</div>
 </template>
 
@@ -27,4 +31,5 @@
 		min-height: 100%;
 		background: #f5f5f5;
 	}
+
 </style>
