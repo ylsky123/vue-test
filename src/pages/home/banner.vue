@@ -56,7 +56,6 @@
 			swiper,
 			swiperSlide
 		},
-
 		computed: {
 
 			swiper() {
@@ -65,7 +64,6 @@
 		}
 
 	}
-
 
 </script>
 

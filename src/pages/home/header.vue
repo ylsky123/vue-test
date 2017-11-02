@@ -6,10 +6,11 @@
 			<span class="single-line">输入城市/景点/游玩主题</span>
 		</div>
 		<div class="header-right">
-			 <!---->
-                        <span class="nav-city">北京
+
+                        <div>
+	                        <span  class="nav-city">乌鲁木齐</span>
                                 <i class="downarrow"></i>
-                        </span>
+                        </div>
 
 		</div>
 	</div>
@@ -66,12 +67,21 @@
 		height: 100%;
 		line-height: .88rem;
 	}
-
+	.nav-city{
+		display:block;
+		width:.8rem;
+		height:.88rem;
+		line-height:.88rem;
+		line-clamp: 3;
+		overflow: hidden;
+		text-overflow:ellipsis;
+		white-space: nowrap;
+	}
 	.downarrow {
 		display: inline-block;
 		width: 0;
 		height: 0;
-		margin-top: .34rem;
+
 		border-left: .12rem solid transparent;
 		border-right: .12rem solid transparent;
 		border-top: .12rem solid #fff;
