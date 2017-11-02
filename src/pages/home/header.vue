@@ -68,20 +68,22 @@
 		line-height: .88rem;
 	}
 	.nav-city{
+		float: left;
 		display:block;
-		width:.8rem;
+		width:.6rem;
 		height:.88rem;
 		line-height:.88rem;
-		line-clamp: 3;
+		margin:0 .1rem;
 		overflow: hidden;
 		text-overflow:ellipsis;
 		white-space: nowrap;
 	}
 	.downarrow {
+		float:left;
 		display: inline-block;
 		width: 0;
 		height: 0;
-
+		margin-top:.4rem;
 		border-left: .12rem solid transparent;
 		border-right: .12rem solid transparent;
 		border-top: .12rem solid #fff;
