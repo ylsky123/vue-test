@@ -44,11 +44,11 @@
 					notNextTick: true,
 					autoplay:3000,
 					loop:true,
-					autoplayDisableOnInteraction:true,
+					autoplayDisableOnInteraction: true,
 					direction:'horizontal',
 					paginationTypes:"bullets",
 					pagination: '.swiper-pagination',
-					observeParents:true
+					observeParents: true
 				}
 			}
 		},
@@ -57,7 +57,6 @@
 			swiperSlide
 		},
 		computed: {
-
 			swiper() {
 				return this.$refs.mySwiper.swiper;
 			}
@@ -72,4 +71,5 @@
 	.swiper-box .swiper-image{
 		width:100%;
 	}
+
 </style>

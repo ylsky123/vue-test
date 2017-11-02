@@ -7,8 +7,7 @@
 
 <script>
 	import Header from "./header";
-	import  Banner from "./banner";
-	import HomeBanner from "./banner.vue";
+	import Banner from "./banner";
 
 	export default {
 		components: {

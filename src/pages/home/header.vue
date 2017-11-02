@@ -11,7 +11,6 @@
 	                        <span  class="nav-city">乌鲁木齐</span>
                                 <i class="downarrow"></i>
                         </div>
-
 		</div>
 	</div>
 </template>
