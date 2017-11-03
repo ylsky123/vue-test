@@ -13,7 +13,7 @@
 	import {swiper, swiperSlide} from 'vue-awesome-swiper'
 
 	export default {
-		data: function () {
+		data() {
 			return {
 				items: [{
 					id: 1,
