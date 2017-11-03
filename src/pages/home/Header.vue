@@ -20,8 +20,6 @@
 </script>
 
 <style>
-	@import '../../../static/iconfont/iconfont.css';
-
 	.header {
 		position: relative;
 		width: 100%;
