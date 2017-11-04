@@ -4,6 +4,9 @@
 		<home-banner></home-banner>
 		<home-swiper></home-swiper>
 		<home-position></home-position>
+		<home-activity></home-activity>
+		<home-selling></home-selling>
+		<home-weekend-list></home-weekend-list>
 	</div>
 </template>
 
@@ -11,21 +14,27 @@
 	import Header from "./Header";
 	import Banner from "./Banner";
 	import Swiper from "./Swiper";
-	import Position from "./Position"
+	import Position from "./Position";
+	import Activity from "./Activity";
+	import SellingList from "./SellingList";
+	import WeekendList from "./WeekendList";
 
-	import "../../../node_modules/swiper/dist/css/swiper.min.css";
 	export default {
 		components: {
 			"home-header": Header,
 			"home-banner": Banner,
 			"home-swiper": Swiper,
-			"home-position": Position
+			"home-position": Position,
+			"home-activity": Activity,
+			"home-selling": SellingList,
+			"home-weekend-list": WeekendList
 		}
 
 	}
 </script>
 
 <style scoped>
+	@import "../../../node_modules/swiper/dist/css/swiper.min.css";
 	@import '../../../static/iconfont/iconfont.css';
 	.page {
 		position: absolute;

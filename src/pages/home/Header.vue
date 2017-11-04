@@ -1,17 +1,18 @@
 <template>
 	<div class="header">
-		<a class="header-left iconfont icon-fanhui"></a>
+		<router-link to="/" class="header-left iconfont icon-fanhui"></router-link>
 		<div class="header-title">
 			<i class="icon-search"></i>
 			<span class="single-line">输入城市/景点/游玩主题</span>
 		</div>
 		<div class="header-right">
-
-			<div>
+			<router-link to="/cities">
 				<span class="nav-city">乌鲁木齐</span>
 				<i class="downarrow"></i>
-			</div>
+			</router-link>
 		</div>
+		<router-view></router-view>
+
 	</div>
 </template>
 
@@ -68,6 +69,7 @@
 		height: .88rem;
 		line-height: .88rem;
 		margin: 0 .1rem;
+		color: #fff;
 		overflow: hidden;
 		text-overflow: ellipsis;
 		white-space: nowrap;

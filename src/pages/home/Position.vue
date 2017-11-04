@@ -13,7 +13,7 @@
 	export default {}
 </script>
 
-<style>
+<style scoped="">
 	.home-position-con {
 		width: 100%;
 		height: 1rem;

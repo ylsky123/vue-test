@@ -17,28 +17,28 @@
 			return {
 				items: [{
 					id: 1,
-					url: "../../../static/images/1.jpg"
+					url: "../../../static/images/swiper/1.jpg"
 				}, {
 					id: 2,
-					url: "../../../static/images/2.jpg"
+					url: "../../../static/images/swiper/2.jpg"
 				}, {
 					id: 3,
-					url: "../../../static/images/3.jpg"
+					url: "../../../static/images/swiper/3.jpg"
 				}, {
 					id: 4,
-					url: "../../../static/images/4.png"
+					url: "../../../static/images/swiper/4.png"
 				}, {
 					id: 5,
-					url: "../../../static/images/5.jpg"
+					url: "../../../static/images/swiper/5.jpg"
 				}, {
 					id: 6,
-					url: "../../../static/images/6.jpg"
+					url: "../../../static/images/swiper/6.jpg"
 				}, {
 					id: 7,
-					url: "../../../static/images/7.jpg"
+					url: "../../../static/images/swiper/7.jpg"
 				}, {
 					id: 8,
-					url: "../../../static/images/8.jpg"
+					url: "../../../static/images/swiper/8.jpg"
 				}],
 				swiperOption: {
 					autoplay: 3000,

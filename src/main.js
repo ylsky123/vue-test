@@ -4,12 +4,11 @@ import router from './router'
 import FastClick from 'fastclick';
 
 FastClick.attach(document.body);
-Vue.config.productionTip = false
-
+Vue.config.productionTip = false;
 
 new Vue({
 	el: '#app',
 	router,
-	template: '<App/>',
+	template: '<App />',
 	components: {App}
 })

@@ -29,42 +29,42 @@
 					"swiperList":[{
 						"id": 1,
 						"link":"/",
-						"imgUrl":"../../../static/images/tickets.png",
+						"imgUrl":"../../../static/images/iconswiper/tickets.png",
 						"keywords":"景点门票"
 					},{
 						"id": 2,
 						"link":"/",
-						"imgUrl":"../../../static/images/zoom.png",
+						"imgUrl":"../../../static/images/iconswiper/zoom.png",
 						"keywords":"动植物园"
 					},{
 						"id": 3,
 						"link":"/",
-						"imgUrl":"../../../static/images/palace.png",
+						"imgUrl":"../../../static/images/iconswiper/palace.png",
 						"keywords":"故宫"
 					},{
 						"id": 4,
 						"link":"/tourdetail",
-						"imgUrl":"../../../static/images/onedaytour.png",
+						"imgUrl":"../../../static/images/iconswiper/onedaytour.png",
 						"keywords":"一日游"
 					},{
 						"id": 5,
 						"link":"/",
-						"imgUrl":"../../../static/images/tour.png",
+						"imgUrl":"../../../static/images/iconswiper/tour.png",
 						"keywords":"必游榜单"
 					},{
 						"id": 6,
 						"link":"/",
-						"imgUrl":"../../../static/images/autumn.png",
+						"imgUrl":"../../../static/images/iconswiper/autumn.png",
 						"keywords":"秋色美"
 					},{
 						"id": 7,
 						"link":"/",
-						"imgUrl":"../../../static/images/playground.png",
+						"imgUrl":"../../../static/images/iconswiper/playground.png",
 						"keywords":"游乐场"
 					},{
 						"id": 8,
 						"link":"/",
-						"imgUrl":"../../../static/images/hotspring.png",
+						"imgUrl":"../../../static/images/iconswiper/hotspring.png",
 						"keywords":"泡温泉"
 					}]
 				},{
@@ -72,42 +72,42 @@
 					"swiperList":[{
 						"id": 1,
 						"link":"/",
-						"imgUrl":"../../../static/images/urbanTourism.png",
+						"imgUrl":"../../../static/images/iconswiper/urbanTourism.png",
 						"keywords":"城市观光"
 					},{
 						"id": 2,
 						"link":"/",
-						"imgUrl":"../../../static/images/glassRoad.png",
+						"imgUrl":"../../../static/images/iconswiper/glassRoad.png",
 						"keywords":"玻璃栈道"
 					},{
 						"id": 3,
 						"link":"/",
-						"imgUrl":"../../../static/images/historicalSites.png",
+						"imgUrl":"../../../static/images/iconswiper/historicalSites.png",
 						"keywords":"名胜古迹"
 					},{
 						"id": 4,
 						"link":"/",
-						"imgUrl":"../../../static/images/around.png",
+						"imgUrl":"../../../static/images/iconswiper/around.png",
 						"keywords":"周边游"
 					},{
 						"id": 5,
 						"link":"/",
-						"imgUrl":"../../../static/images/naturalScenery.png",
+						"imgUrl":"../../../static/images/iconswiper/naturalScenery.png",
 						"keywords":"自然风光"
 					},{
 						"id": 6,
 						"link":"/",
-						"imgUrl":"../../../static/images/town.png",
+						"imgUrl":"../../../static/images/iconswiper/town.png",
 						"keywords":"古北水镇"
 					},{
 						"id": 7,
 						"link":"/",
-						"imgUrl":"../../../static/images/explanation.png",
+						"imgUrl":"../../../static/images/iconswiper/explanation.png",
 						"keywords":"景点讲解"
 					},{
 						"id": 8,
 						"link":"/",
-						"imgUrl":"../../../static/images/all.png",
+						"imgUrl":"../../../static/images/iconswiper/all.png",
 						"keywords":"全部"
 					}]
 				}],

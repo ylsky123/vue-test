@@ -6,42 +6,42 @@
                         "swiperList":[{
                                 "id": 1,
                                 "link":"/",
-                                "imgUrl":"../images/tickets.png",
+                                "imgUrl":"../images/iconswiper/tickets.png",
                                 "keywords":"景点门票"
                         },{
                                 "id": 2,
                                 "link":"/",
-                                "imgUrl":"../images/zoom.png",
+                                "imgUrl":"../images/iconswiper/zoom.png",
                                 "keywords":"动植物园"
                         },{
                                 "id": 3,
                                 "link":"/",
-                                "imgUrl":"../images/palace.png",
+                                "imgUrl":"../images/iconswiper/palace.png",
                                 "keywords":"故宫"
                         },{
                                 "id": 4,
                                 "link":"/tourdetail",
-                                "imgUrl":"../images/onedaytour.png",
+                                "imgUrl":"../images/iconswiper/onedaytour.png",
                                 "keywords":"一日游"
                         },{
                                 "id": 5,
                                 "link":"/",
-                                "imgUrl":"../images/tour.png",
+                                "imgUrl":"../images/iconswiper/tour.png",
                                 "keywords":"必游榜单"
                         },{
                                 "id": 6,
                                 "link":"/",
-                                "imgUrl":"../images/autumn.png",
+                                "imgUrl":"../images/iconswiper/autumn.png",
                                 "keywords":"秋色美"
                         },{
                                 "id": 7,
                                 "link":"/",
-                                "imgUrl":"../images/playground.png",
+                                "imgUrl":"../images/iconswiper/playground.png",
                                 "keywords":"游乐场"
                         },{
                                 "id": 8,
                                 "link":"/",
-                                "imgUrl":"../images/hotspring.png",
+                                "imgUrl":"../images/iconswiper/hotspring.png",
                                 "keywords":"泡温泉"
                         }]
                 },{
@@ -49,44 +49,111 @@
                         "list":[{
                                 "id": 1,
                                 "link":"/",
-                                "imgUrl":"../images/urbanTourism.png",
+                                "imgUrl":"../images/iconswiper/urbanTourism.png",
                                 "keywords":"城市观光"
                         },{
                                 "id": 2,
                                 "link":"/",
-                                "imgUrl":"../images/glassRoad.png",
+                                "imgUrl":"../images/iconswiper/glassRoad.png",
                                 "keywords":"玻璃栈道"
                         },{
                                 "id": 3,
                                 "link":"/",
-                                "imgUrl":"../images/historicalSites.png",
+                                "imgUrl":"../images/iconswiper/historicalSites.png",
                                 "keywords":"名胜古迹"
                         },{
                                 "id": 4,
                                 "link":"/",
-                                "imgUrl":"../images/around.png",
+                                "imgUrl":"../images/iconswiper/around.png",
                                 "keywords":"周边游"
                         },{
                                 "id": 5,
                                 "link":"/",
-                                "imgUrl":"../images/naturalScenery.png",
+                                "imgUrl":"../images/iconswiper/naturalScenery.png",
                                 "keywords":"自然风光"
                         },{
                                 "id": 6,
                                 "link":"/",
-                                "imgUrl":"../images/town.png",
+                                "imgUrl":"../images/iconswiper/town.png",
                                 "keywords":"古北水镇"
                         },{
                                 "id": 7,
                                 "link":"/",
-                                "imgUrl":"../images/explanation.png",
+                                "imgUrl":"../images/iconswiper/explanation.png",
                                 "keywords":"景点讲解"
                         },{
                                 "id": 8,
                                 "link":"/",
-                                "imgUrl":"../images/all.png",
+                                "imgUrl":"../images/iconswiper/all.png",
                                 "keywords":"全部"
                         }]
+                }],
+                "hotList": [{
+                        "id": 1,
+                        "link": "/detail",
+                        "imgUrl": "../images/homelist/palace.jpg",
+                        "title": "故宫",
+                        "content": "东方宫殿建筑代表，世界宫殿建筑典范",
+                        "price": 65
+                },{
+                        "id": 2,
+                        "link": "/detail",
+                        "imgUrl": "../images/homelist/greatWall.jpg",
+                        "title": "八达岭长城",
+                        "content": "不到长城非好汉",
+                        "price": 25
+                },{
+                        "id": 3,
+                        "link": "/detail",
+                        "imgUrl": "../images/homelist/SummerPalace.jpg",
+                        "title": "颐和园",
+                        "content": "保存完整的一座皇家行宫御苑",
+                        "price": 1
+                },{
+                        "id": 4,
+                        "link": "/detail",
+                        "imgUrl": "../images/homelist/happyValley.jpg",
+                        "title": "北京欢乐谷",
+                        "content": "七大主题园区带你畅享北京欢乐谷",
+                        "price": 11
+                },{
+                        "id": 5,
+                        "link": "/detail",
+                        "imgUrl": "../images/homelist/wall.jpg",
+                        "title": "慕田峪长城",
+                        "content": "秀美长城，关键是人少",
+                        "price": 19.1
+                }],
+                "weekList":[{
+                        "id": 1,
+                        "link": "/detail",
+                        "imgUrl": "../images/homeweekendlist/1.jpg",
+                        "title": "北京温泉排行榜",
+                        "content": "细数北京温泉，温暖你的冬天"
+                },{
+                        "id": 2,
+                        "link": "/detail",
+                        "imgUrl": "../images/homeweekendlist/2.jpg",
+                        "title": "寻找北京的皇城范儿",
+                        "content": "数百年的宫廷庙宇，至今依旧威严霸气"
+                },{
+                        "id": 3,
+                        "link": "/detail",
+                        "imgUrl": "../images/homeweekendlist/3.jpg",
+                        "title": "北京必游TOP10",
+                        "content": "来北京必去的景点非这些地方莫属"
+                },{
+                        "id":4,
+                        "link": "/detail",
+                        "imgUrl": "../images/homeweekendlist/4.jpg",
+                        "title": "登高望远秋色佳",
+                        "content": "山顶满眼彩色，此情此景醉了"
+                },{
+                        "id": 5,
+                        "link": "/detail",
+                        "imgUrl": "../images/homeweekendlist/5.jpg",
+                        "title": "秋高气爽去礼佛",
+                        "content": "秋风伴着美妙经声，品尝秋的另一番滋味"
                 }]
         }]
 }
