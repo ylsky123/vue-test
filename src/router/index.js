@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/pages/home/Home'
-import Header from '@/pages/home/Header'
+import Header from '@/pages/home/components/Header'
+import Search from '@/pages/search/Search'
 import Cities from '@/pages/cities/Cities'
 import List from '@/pages/list/List'
 import Detail from '@/pages/detail/Detail'
@@ -20,8 +21,7 @@ export default new Router({
 		{
 			path: '/',
 			name: 'header',
-			component: Header
-			,
+			component: Header,
 			children: [{
 				path: '/list',
 				name: 'list',
@@ -30,10 +30,6 @@ export default new Router({
 				path: '/tourlist',
 				name: 'tourList',
 				component: TourList
-			}, {
-				path: '/cities',
-				name: 'cities',
-				component: Cities
 			}]
 		}, {
 			path: '/detail',
@@ -43,5 +39,13 @@ export default new Router({
 			path: '/tourdetail',
 			name: 'tourDetail',
 			component: TourDetail
-	}]
+		}, {
+			path: '/cities',
+			name: 'cities',
+			component: Cities
+		},{
+			path: '/search',
+			name: 'search',
+			component: Search
+		}]
 })

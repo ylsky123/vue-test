@@ -1,159 +1,230 @@
 {
         "ret": true,
-        "data": [{
-                "swiperItems":[{
-                        "id":1,
-                        "swiperList":[{
+        "data": {
+                "bannerInfo": [
+                        {
                                 "id": 1,
-                                "link":"/",
-                                "imgUrl":"../images/iconswiper/tickets.png",
-                                "keywords":"景点门票"
-                        },{
+                                "url": "http://img1.qunarzz.com/piao/fusion/1710/f5/57137c621d75ba02.jpg_640x200_b984ddf7.jpg"
+                        },
+                        {
                                 "id": 2,
-                                "link":"/",
-                                "imgUrl":"../images/iconswiper/zoom.png",
-                                "keywords":"动植物园"
-                        },{
+                                "url": "http://img1.qunarzz.com/piao/fusion/1609/15/630b82d932a3c402.jpg_640x200_862e836b.jpg"
+                        },
+                        {
                                 "id": 3,
-                                "link":"/",
-                                "imgUrl":"../images/iconswiper/palace.png",
-                                "keywords":"故宫"
-                        },{
+                                "url": "http://img1.qunarzz.com/piao/fusion/1711/b3/66f7230d9ad6e002.jpg_640x200_077e61ee.jpg"
+                        },
+                        {
                                 "id": 4,
-                                "link":"/tourdetail",
-                                "imgUrl":"../images/iconswiper/onedaytour.png",
-                                "keywords":"一日游"
-                        },{
+                                "url": "http://img1.qunarzz.com/piao/fusion/1710/16/1d7693c6bd8abd02.png_640x200_43c308dd.png"
+                        },
+                        {
                                 "id": 5,
-                                "link":"/",
-                                "imgUrl":"../images/iconswiper/tour.png",
-                                "keywords":"必游榜单"
-                        },{
+                                "url": "http://img1.qunarzz.com/piao/fusion/1609/c9/cacbf705c5417e02.jpg_640x200_99b2676a.jpg"
+                        },
+                        {
                                 "id": 6,
-                                "link":"/",
-                                "imgUrl":"../images/iconswiper/autumn.png",
-                                "keywords":"秋色美"
-                        },{
+                                "url": "http://img1.qunarzz.com/piao/fusion/1609/f3/52a119dbed871902.jpg_640x200_b4573df8.jpg"
+                        },
+                        {
                                 "id": 7,
-                                "link":"/",
-                                "imgUrl":"../images/iconswiper/playground.png",
-                                "keywords":"游乐场"
-                        },{
+                                "url": "http://img1.qunarzz.com/piao/fusion/1711/c5/2b4166f592b33202.jpg_640x200_27b41388.jpg"
+                        },
+                        {
                                 "id": 8,
-                                "link":"/",
-                                "imgUrl":"../images/iconswiper/hotspring.png",
-                                "keywords":"泡温泉"
-                        }]
-                },{
-                        "id":2,
-                        "list":[{
+                                "url": "http://img1.qunarzz.com/piao/fusion/1710/16/249e5d9c533f6e02.jpg_640x200_9d63493e.jpg"
+                        },
+                        {
+                                "id": 9,
+                                "url":"http://img1.qunarzz.com/piao/fusion/1703/51/01864a8a35c20402.jpg_640x200_d16dcbcd.jpg"
+                        }
+                ],
+                "swiperItems": [
+                        {
                                 "id": 1,
-                                "link":"/",
-                                "imgUrl":"../images/iconswiper/urbanTourism.png",
-                                "keywords":"城市观光"
-                        },{
+                                "swiperList": [
+                                        {
+                                                "id": 1,
+                                                "link": "/",
+                                                "imgUrl": "http://img1.qunarzz.com/piao/fusion/1611/54/ace00878a52d9702.png",
+                                                "keywords": "景点门票"
+                                        },
+                                        {
+                                                "id": 2,
+                                                "link": "/",
+                                                "imgUrl": "http://img1.qunarzz.com/piao/fusion/1611/35/2640cab202c41b02.png",
+                                                "keywords": "动植物园"
+                                        },
+                                        {
+                                                "id": 3,
+                                                "link": "/",
+                                                "imgUrl": "http://img1.qunarzz.com/piao/fusion/1611/45/676b67d7078abc02.png",
+                                                "keywords": "故宫"
+                                        },
+                                        {
+                                                "id": 4,
+                                                "link": "/tourdetail",
+                                                "imgUrl": "http://img1.qunarzz.com/piao/fusion/1611/a9/ffc620dbda9b9c02.png",
+                                                "keywords": "一日游"
+                                        },
+                                        {
+                                                "id": 5,
+                                                "link": "/",
+                                                "imgUrl": "http://img1.qunarzz.com/piao/fusion/1611/59/569d3c096e542502.png",
+                                                "keywords": "必游榜单"
+                                        },
+                                        {
+                                                "id": 6,
+                                                "link": "/",
+                                                "imgUrl": "http://img1.qunarzz.com/piao/fusion/1611/6d/ee9eb965690ce402.png",
+                                                "keywords": "秋色美"
+                                        },
+                                        {
+                                                "id": 7,
+                                                "link": "/",
+                                                "imgUrl": "http://img1.qunarzz.com/piao/fusion/1611/d0/e09575e66f4aa402.png",
+                                                "keywords": "游乐场"
+                                        },
+                                        {
+                                                "id": 8,
+                                                "link": "/",
+                                                "imgUrl": "http://img1.qunarzz.com/piao/fusion/1710/a6/83f636bd75ae6302.png",
+                                                "keywords": "泡温泉"
+                                        }
+                                ]
+                        },
+                        {
                                 "id": 2,
-                                "link":"/",
-                                "imgUrl":"../images/iconswiper/glassRoad.png",
-                                "keywords":"玻璃栈道"
-                        },{
+                                "swiperList": [
+                                        {
+                                                "id": 1,
+                                                "link": "/",
+                                                "imgUrl": "http://img1.qunarzz.com/piao/fusion/1611/7f/b1ea3c8c7fb6db02.png",
+                                                "keywords": "城市观光"
+                                        },
+                                        {
+                                                "id": 2,
+                                                "link": "/",
+                                                "imgUrl": "http://img1.qunarzz.com/piao/fusion/1611/29/c16cd064d85d8502.png",
+                                                "keywords": "玻璃栈道"
+                                        },
+                                        {
+                                                "id": 3,
+                                                "link": "/",
+                                                "imgUrl": "http://img1.qunarzz.com/piao/fusion/1611/1c/a8a8d9023a814c02.png",
+                                                "keywords": "名胜古迹"
+                                        },
+                                        {
+                                                "id": 4,
+                                                "link": "/",
+                                                "imgUrl": "https://img1.qunarzz.com/piao/fusion/1602/f2/71eb19f77e3f21f7.png",
+                                                "keywords": "周边游"
+                                        },
+                                        {
+                                                "id": 5,
+                                                "link": "/",
+                                                "imgUrl": "http://img1.qunarzz.com/piao/fusion/1611/cd/07f33cc087f18d02.png",
+                                                "keywords": "自然风光"
+                                        },
+                                        {
+                                                "id": 6,
+                                                "link": "/",
+                                                "imgUrl": "http://img1.qunarzz.com/piao/fusion/1611/ea/8cb1dce519375d02.png",
+                                                "keywords": "古北水镇"
+                                        },
+                                        {
+                                                "id": 7,
+                                                "link": "/",
+                                                "imgUrl": "http://img1.qunarzz.com/piao/fusion/1707/34/9285073fde1eb702.png",
+                                                "keywords": "景点讲解"
+                                        },
+                                        {
+                                                "id": 8,
+                                                "link": "/",
+                                                "imgUrl": "http://img1.qunarzz.com/piao/fusion/1611/be/a70e61e1f57ee302.png",
+                                                "keywords": "全部"
+                                        }
+                                ]
+                        }
+                ],
+                "hotList": [
+                        {
+                                "id": 1,
+                                "link": "/detail",
+                                "imgUrl": "http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_140x140_80f63803.jpg",
+                                "title": "故宫",
+                                "content": "东方宫殿建筑代表，世界宫殿建筑典范",
+                                "price": 65
+                        },
+                        {
+                                "id": 2,
+                                "link": "/detail",
+                                "imgUrl": "http://img1.qunarzz.com/sight/p0/1505/d2/d274c92de14c93da.water.jpg_140x140_e20be8e0.jpg",
+                                "title": "八达岭长城",
+                                "content": "不到长城非好汉",
+                                "price": 25
+                        },
+                        {
                                 "id": 3,
-                                "link":"/",
-                                "imgUrl":"../images/iconswiper/historicalSites.png",
-                                "keywords":"名胜古迹"
-                        },{
+                                "link": "/detail",
+                                "imgUrl": "http://img1.qunarzz.com/sight/p0/1708/2b/2b3b94de99c0a425a3.img.jpg_140x140_97813766.jpg",
+                                "title": "颐和园",
+                                "content": "保存完整的一座皇家行宫御苑",
+                                "price": 1
+                        },
+                        {
                                 "id": 4,
-                                "link":"/",
-                                "imgUrl":"../images/iconswiper/around.png",
-                                "keywords":"周边游"
-                        },{
+                                "link": "/detail",
+                                "imgUrl": "http://img1.qunarzz.com/sight/p0/1508/a5/4003f9dd7bebf61eccbf64046e26d487.water.jpg_140x140_b05eb1df.jpg",
+                                "title": "北京欢乐谷",
+                                "content": "七大主题园区带你畅享北京欢乐谷",
+                                "price": 11
+                        },
+                        {
                                 "id": 5,
-                                "link":"/",
-                                "imgUrl":"../images/iconswiper/naturalScenery.png",
-                                "keywords":"自然风光"
-                        },{
-                                "id": 6,
-                                "link":"/",
-                                "imgUrl":"../images/iconswiper/town.png",
-                                "keywords":"古北水镇"
-                        },{
-                                "id": 7,
-                                "link":"/",
-                                "imgUrl":"../images/iconswiper/explanation.png",
-                                "keywords":"景点讲解"
-                        },{
-                                "id": 8,
-                                "link":"/",
-                                "imgUrl":"../images/iconswiper/all.png",
-                                "keywords":"全部"
-                        }]
-                }],
-                "hotList": [{
-                        "id": 1,
-                        "link": "/detail",
-                        "imgUrl": "../images/homelist/palace.jpg",
-                        "title": "故宫",
-                        "content": "东方宫殿建筑代表，世界宫殿建筑典范",
-                        "price": 65
-                },{
-                        "id": 2,
-                        "link": "/detail",
-                        "imgUrl": "../images/homelist/greatWall.jpg",
-                        "title": "八达岭长城",
-                        "content": "不到长城非好汉",
-                        "price": 25
-                },{
-                        "id": 3,
-                        "link": "/detail",
-                        "imgUrl": "../images/homelist/SummerPalace.jpg",
-                        "title": "颐和园",
-                        "content": "保存完整的一座皇家行宫御苑",
-                        "price": 1
-                },{
-                        "id": 4,
-                        "link": "/detail",
-                        "imgUrl": "../images/homelist/happyValley.jpg",
-                        "title": "北京欢乐谷",
-                        "content": "七大主题园区带你畅享北京欢乐谷",
-                        "price": 11
-                },{
-                        "id": 5,
-                        "link": "/detail",
-                        "imgUrl": "../images/homelist/wall.jpg",
-                        "title": "慕田峪长城",
-                        "content": "秀美长城，关键是人少",
-                        "price": 19.1
-                }],
-                "weekList":[{
-                        "id": 1,
-                        "link": "/detail",
-                        "imgUrl": "../images/homeweekendlist/1.jpg",
-                        "title": "北京温泉排行榜",
-                        "content": "细数北京温泉，温暖你的冬天"
-                },{
-                        "id": 2,
-                        "link": "/detail",
-                        "imgUrl": "../images/homeweekendlist/2.jpg",
-                        "title": "寻找北京的皇城范儿",
-                        "content": "数百年的宫廷庙宇，至今依旧威严霸气"
-                },{
-                        "id": 3,
-                        "link": "/detail",
-                        "imgUrl": "../images/homeweekendlist/3.jpg",
-                        "title": "北京必游TOP10",
-                        "content": "来北京必去的景点非这些地方莫属"
-                },{
-                        "id":4,
-                        "link": "/detail",
-                        "imgUrl": "../images/homeweekendlist/4.jpg",
-                        "title": "登高望远秋色佳",
-                        "content": "山顶满眼彩色，此情此景醉了"
-                },{
-                        "id": 5,
-                        "link": "/detail",
-                        "imgUrl": "../images/homeweekendlist/5.jpg",
-                        "title": "秋高气爽去礼佛",
-                        "content": "秋风伴着美妙经声，品尝秋的另一番滋味"
-                }]
-        }]
+                                "link": "/detail",
+                                "imgUrl": "http://img1.qunarzz.com/sight/p0/1708/2b/2b6378fd3b2e1d86a3.img.jpg_140x140_eae81520.jpg",
+                                "title": "慕田峪长城",
+                                "content": "秀美长城，关键是人少",
+                                "price": 19.1
+                        }
+                ],
+                "weekendList": [
+                        {
+                                "id": 1,
+                                "link": "/detail",
+                                "imgUrl": "http://img1.qunarzz.com/sight/source/1510/6e/1ea71e2f04e.jpg_r_640x214_aa6f091d.jpg",
+                                "title": "北京温泉排行榜",
+                                "content": "细数北京温泉，温暖你的冬天"
+                        },
+                        {
+                                "id": 2,
+                                "link": "/detail",
+                                "imgUrl": "http://img1.qunarzz.com/sight/source/1505/9e/21df651e19af5d.jpg_r_640x214_3ea5bb38.jpg",
+                                "title": "寻找北京的皇城范儿",
+                                "content": "数百年的宫廷庙宇，至今依旧威严霸气"
+                        },
+                        {
+                                "id": 3,
+                                "link": "/detail",
+                                "imgUrl": "http://img1.qunarzz.com/sight/source/1505/aa/7baaf8a851d221.jpg_r_640x214_1431200f.jpg",
+                                "title": "北京必游TOP10",
+                                "content": "来北京必去的景点非这些地方莫属"
+                        },
+                        {
+                                "id": 4,
+                                "link": "/detail",
+                                "imgUrl": "http://img1.qunarzz.com/sight/source/1509/81/0412da9c4db66a.jpg_r_640x214_8e23871e.jpg",
+                                "title": "登高望远秋色佳",
+                                "content": "山顶满眼彩色，此情此景醉了"
+                        },
+                        {
+                                "id": 5,
+                                "link": "/detail",
+                                "imgUrl": "http://img1.qunarzz.com/sight/source/1509/28/1bb74b851279e6.jpg_r_640x214_64ebf0ee.jpg",
+                                "title": "秋高气爽去礼佛",
+                                "content": "秋风伴着美妙经声，品尝秋的另一番滋味"
+                        }
+                ]
+        }
 }

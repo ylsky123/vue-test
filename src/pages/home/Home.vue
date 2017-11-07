@@ -1,25 +1,28 @@
 <template>
 	<div class="page">
 		<home-header></home-header>
-		<home-banner></home-banner>
-		<home-swiper></home-swiper>
+		<home-banner :bannerInfo="homeData.bannerInfo"></home-banner>
+		<home-swiper :swiperItems="homeData.swiperItems"></home-swiper>
 		<home-position></home-position>
 		<home-activity></home-activity>
-		<home-selling></home-selling>
-		<home-weekend-list></home-weekend-list>
+		<home-selling :hotList="homeData.hotList"></home-selling>
+		<home-weekend-list :weekendList="homeData.weekendList"></home-weekend-list>
 	</div>
 </template>
 
 <script>
-	import Header from "./Header";
-	import Banner from "./Banner";
-	import Swiper from "./Swiper";
-	import Position from "./Position";
-	import Activity from "./Activity";
-	import SellingList from "./SellingList";
-	import WeekendList from "./WeekendList";
+	import Header from './components/Header'
+	import Banner from './components/Banner'
+	import Swiper from './components/Swiper'
+	import Position from './components/Position'
+	import Activity from './components/Activity'
+	import SellingList from './components/SellingList'
+	import WeekendList from './components/WeekendList'
+	import {AJAX_GET_DATA} from './types.js'
+	import { mapState, mapActions } from 'vuex'
 
 	export default {
+
 		components: {
 			"home-header": Header,
 			"home-banner": Banner,
@@ -28,14 +31,26 @@
 			"home-activity": Activity,
 			"home-selling": SellingList,
 			"home-weekend-list": WeekendList
-		}
+		},
+		computed: mapState({
+			homeData: state => state.home.homeData
+		}),
+		mounted() {
+			!this.homeData.length && this.getHomeData()
+		},
+		methods: mapActions({
+			getHomeData: (dispatch) => {
+				dispatch(AJAX_GET_DATA)
+			}
+		})
+
 
 	}
 </script>
 
 <style scoped>
 	@import "../../../node_modules/swiper/dist/css/swiper.min.css";
-	@import '../../../static/iconfont/iconfont.css';
+
 	.page {
 		position: absolute;
 		top: 0;

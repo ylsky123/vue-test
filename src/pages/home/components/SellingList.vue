@@ -24,46 +24,7 @@
 
 <script>
 	export default {
-		data() {
-			return {
-				"hotList": [{
-					"id": 1,
-					"link": "/detail",
-					"imgUrl": "../../../static/images/homelist/palace.jpg",
-					"title": "故宫",
-					"content": "东方宫殿建筑代表，世界宫殿建筑典范",
-					"price": 65
-				}, {
-					"id": 2,
-					"link": "/detail",
-					"imgUrl": "../../../static/images/homelist/greatWall.jpg",
-					"title": "八达岭长城",
-					"content": "不到长城非好汉",
-					"price": 25
-				}, {
-					"id": 3,
-					"link": "/detail",
-					"imgUrl": "../../../static/images/homelist/SummerPalace.jpg",
-					"title": "颐和园",
-					"content": "保存完整的一座皇家行宫御苑",
-					"price": 1
-				}, {
-					"id": 4,
-					"link": "/detail",
-					"imgUrl": "../../../static/images/homelist/happyValley.jpg",
-					"title": "北京欢乐谷",
-					"content": "七大主题园区带你畅享北京欢乐谷",
-					"price": 11
-				}, {
-					"id": 5,
-					"link": "/detail",
-					"imgUrl": "../../../static/images/homelist/wall.jpg",
-					"title": "慕田峪长城",
-					"content": "秀美长城，关键是人少",
-					"price": 19.1
-				}]
-			}
-		}
+		props:["hotList"],
 	}
 </script>
 
@@ -83,8 +44,8 @@
 	}
 
 	.hot-sell-item {
-		position: relative;
 		overflow: hidden;
+		position: relative;
 		height: 1.4rem;
 		padding: .24rem;
 		margin-bottom: .02rem;

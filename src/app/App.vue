@@ -5,11 +5,13 @@
 </template>
 
 <script>
+
 	export default {
-		name: 'app'
+		name: 'app',
 	}
 </script>
 
 <style>
 	@import "reset.css";
+	@import "../../static/iconfont/iconfont.css"
 </style>

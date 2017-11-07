@@ -31,6 +31,8 @@
 		color: #212121;
 		line-height: .98rem;
 		text-align: center;
+		white-space: nowrap;
+		text-overflow: ellipsis;
 	}
 
 	.home-position-right {
@@ -43,5 +45,7 @@
 		color: #212121;
 		line-height: .98rem;
 		text-align: center;
+		white-space: nowrap;
+		text-overflow: ellipsis;
 	}
 </style>
