@@ -21,18 +21,21 @@
 <script>
 	import { mapState } from 'vuex'
 
-
 	export default {
-
+		beforeCreate() {
+			this.$store.commit("initCitiesVal")
+		},
 		computed: mapState({
 			citiesVal (state) {
-				return state.home.citiesVal
+				return state.home.citiesVal;
 			}
+
 		}),
 		methods: {
 			handleClick() {
 				router.go(-1)
-			}
+			},
+
 		}
 	}
 </script>

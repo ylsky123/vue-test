@@ -11,8 +11,16 @@ export default {
 			state.homeData = payload
 		},
 		getCitiesVal(state, payload) {
-			state.citiesVal = payload
+			state.citiesVal = payload;
+			localStorage.citiesVal = payload
+			
+		},
+		initCitiesVal(state) {
+			if(localStorage.citiesVal){
+				state.citiesVal = localStorage.citiesVal
+			}
 		}
+		
 	},
 	actions: {
 		[AJAX_GET_DATA](context) {

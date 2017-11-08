@@ -11,7 +11,7 @@
 		<ul class="words-sort-list">
 			<li class="words-sort-list-item" v-for="(item, index) in citiesData.internal.words"
 			    :key="item.id" @click="wordsJump(index)">
-				<div class="cities-list-link" >{{item.text}}</div>
+				<div class="cities-list-link">{{item.text}}</div>
 			</li>
 		</ul>
 		<div class="words-jump">
@@ -79,11 +79,11 @@
 		computed: mapState({
 			citiesData(state) {
 				return state.cities.citiesData
-			}
+			},
 
 		}),
 		beforeMount() {
-			this.getCitiesData()
+			!this.citiesData.length && this.getCitiesData()
 		},
 
 
@@ -107,6 +107,7 @@
 
 				window.pageYOffset = top
 			}
+
 		}
 
 	}
