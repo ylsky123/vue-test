@@ -14,27 +14,27 @@ Vue.use(Router);
 
 export default new Router({
 	routes: [{
-		path: '/',
-		name: 'home',
-		component: Home
-	},
+			path: '/',
+			name: 'home',
+			component: Home
+		},
 		{
 			path: '/',
 			name: 'header',
-			component: Header,
-			children: [{
-				path: '/list',
-				name: 'list',
-				component: List
-			}, {
-				path: '/tourlist',
-				name: 'tourList',
-				component: TourList
-			}]
+			component: Header
 		}, {
 			path: '/detail',
 			name: 'detail',
 			component: Detail
+		},
+		{
+			path: '/list',
+			name: 'list',
+			component: List
+		}, {
+			path: '/tourlist',
+			name: 'tourList',
+			component: TourList
 		}, {
 			path: '/tourdetail',
 			name: 'tourDetail',
@@ -43,7 +43,7 @@ export default new Router({
 			path: '/cities',
 			name: 'cities',
 			component: Cities
-		},{
+		}, {
 			path: '/search',
 			name: 'search',
 			component: Search
