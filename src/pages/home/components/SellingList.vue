@@ -10,7 +10,7 @@
 						<p class="hot-sell-item-con">{{item.content}}</p>
 					</div>
 					<div class="hot-sell-item-price">
-						￥<span class="hot-sell-item-num">{{item.price}}</span>
+						&yen<span class="hot-sell-item-num">{{item.price}}</span>
 						<span class="hot-sell-item-text">起</span>
 					</div>
 				</router-link>
