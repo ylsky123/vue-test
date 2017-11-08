@@ -1,0 +1,116 @@
+{
+    "ret":true,
+    "data":{
+        "list":[{
+            "id":1,
+            "imgUrl":"http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_110x110_fac6a6cd.jpg",
+            "name":"故宫(5A)",
+            "hot":"热",
+            "money": 20,
+            "address":"北京·东城区",
+            "ticketName":"【上午场】故宫成人票",
+            "qunarprice":40,
+            "ticketName2":"【下午场】故宫成人票",
+            "qunarprice2":40
+        },{
+            "id":2,
+            "imgUrl":"http://img1.qunarzz.com/sight/p0/1505/d2/d274c92de14c93da.water.jpg_110x110_d9d85877.jpg",
+            "name":"颐和园(5A)",
+            "hot":"热",
+            "money": 24.7,
+            "address":"北京·海淀区",
+            "ticketName":"颐和园+园中园成人票",
+            "qunarprice":50,
+            "ticketName2":"颐和园+园中园学生/老人票",
+            "qunarprice2":25
+        },{
+            "id":3,
+            "imgUrl":"http://img1.qunarzz.com/sight/p0/1708/2b/2b3b94de99c0a425a3.img.jpg_110x110_684eb80e.jpg",
+            "name":"八达岭长城(5A)",
+            "hot":"热",
+            "money": 20,
+            "address":"北京·延庆县",
+            "ticketName":"八达岭长城门票+空中索道往返成人票",
+            "qunarprice":175,
+            "ticketName2":"八达岭长城门票+空中索道往返学生/老人票",
+            "qunarprice2":157.5
+        },{
+            "id":4,
+            "imgUrl":"http://img1.qunarzz.com/sight/p0/1508/a5/4003f9dd7bebf61eccbf64046e26d487.water.jpg_110x110_e23a9143.jpg",
+            "name":"北京欢乐谷(4A)",
+            "hot":"热",
+            "money": 13,
+            "address":"北京·东城区",
+            "ticketName":"【活动票】北京欢乐谷金面王朝演出成人票",
+            "qunarprice":15,
+            "ticketName2":"【活动票】北京欢乐谷日场成人票",
+            "qunarprice2":111
+        },{
+            "id":5,
+            "imgUrl":"http://img1.qunarzz.com/sight/p0/1708/2b/2b6378fd3b2e1d86a3.img.jpg_110x110_07ed4c23.jpg",
+            "name":"慕田峪长城(5A)",
+            "hot":"热",
+            "money": 19.1,
+            "address":"北京·东城区",
+            "ticketName":"慕田峪长城成人票",
+            "qunarprice":38,
+            "ticketName2":"慕田峪长城老人票",
+            "qunarprice2":20
+        },{
+            "id":6,
+            "imgUrl":"http://img1.qunarzz.com/sight/p0/1501/f4/f467729126949c3a.water.jpg_110x110_2c172ba2.jpg",
+            "name":"天安门广场",
+            "hot":"热",
+            "money": 20,
+            "address":"北京·东城区",
+            "ticketName":"故宫+珍宝馆+钟表馆（成人票)",
+            "qunarprice":60,
+            "ticketName2":"【上午场】故宫成人票",
+            "qunarprice2":40
+        },{
+            "id":7,
+            "imgUrl":"http://img1.qunarzz.com/sight/p0/201306/13/bdf22f69fab0ee4ec8d65eac.jpg_110x110_3403a6d8.jpg",
+            "name":"八达岭长城缆车",
+            "hot":"热",
+            "money": 157.5,
+            "address":"北京·八达岭长城",
+            "ticketName":"八达岭长城门票+空中索道往返学生/老人票",
+            "qunarprice":157.5,
+            "ticketName2":"八达岭长城门票+空中索道往返成人票",
+            "qunarprice2":175
+        },{
+            "id":8,
+            "imgUrl":"http://img1.qunarzz.com/sight/p0/1410/ee/5140b8da5ef82cad730c0810fa81371f.water.jpg_110x110_d312e77c.jpg",
+            "name":"北京·房山区",
+            "hot":"热",
+            "money": 44.9,
+            "address":"北京·房山区",
+            "ticketName":"【活动票】坡峰岭景区红叶节门票",
+            "qunarprice":45,
+            "ticketName2":"坡峰岭门票",
+            "qunarprice2":45
+        },{
+            "id":9,
+            "imgUrl":"http://img1.qunarzz.com/sight/p0/1505/f5/f5f45e1a83537bcb.water.jpg_110x110_4c72dbfd.jpg",
+            "name":"圆明园(4A)",
+            "hot":"热",
+            "money": 25,
+            "address":"北京·海淀区",
+            "ticketName":"圆明园成人票（含大水法遗址、迷宫、全景沙盘)",
+            "qunarprice":26.5,
+            "ticketName2":"圆明园门票+圆明园导览器（中文）",
+            "qunarprice2":35
+        },{
+            "id":10,
+            "imgUrl":"http://img1.qunarzz.com/sight/p0/201403/07/52906a98924b5ab7c47b6119a074a8ad.jpg_110x110_adb49d10.jpg",
+            "name":"玉渡山",
+            "hot":"热",
+            "money": 51.9,
+            "address":"北京·延庆县",
+            "ticketName":"玉渡山门票",
+            "qunarprice":53,
+            "ticketName2":"圆明园门票+圆明园导览器（中文）",
+            "qunarprice2":35
+        }]
+    }
+}        
