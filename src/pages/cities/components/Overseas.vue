@@ -63,36 +63,20 @@
 </template>
 
 <script>
-	import {AJAX_GET_DATA} from '../types.js'
-	import {mapState, mapActions} from 'vuex'
+
 
 	export default {
+		props:["citiesData"],
 		data() {
 			return {
 				position: false,
 				isActive: true,
-				isActive1: false,
-
+				isActive1: false
 			}
 		},
 
-		computed: mapState({
-			citiesData(state) {
-				return state.cities.citiesData
-			},
-
-		}),
-		beforeMount() {
-			!this.citiesData.length && this.getCitiesData()
-		},
-
-
 		methods: {
-			...mapActions({
-				getCitiesData(dispatch) {
-					dispatch(AJAX_GET_DATA)
-				}
-			}),
+
 			handleCitiesClick(val) {
 				this.$store.commit("getCitiesVal", val)
 			},

@@ -1,12 +1,12 @@
 <template>
-	<div :class="{'search-list-con':true, active2:isActive2}">
+	<div :class="{'search-list-con':true, 'search-isActive':searchIsActive}">
 		<div class="search-list-header">
 			<h1 class="search-list-title">搜索建议</h1>
 			<span class="clear-search-list" @click="clearSearchList">关闭</span>
 		</div>
 		<ul class="search-list">
 			<li class="search-list-item" v-for="item in searchData.searchList">
-				<i class="search-list-scene iconfont icon-jingdian"></i>
+				<i class="search-list-icon iconfont icon-jingdian"></i>
 				<span class="search-list-describe">{{item.text}}</span>
 			</li>
 		</ul>
@@ -19,7 +19,7 @@
 	import {mapState, mapActions} from 'vuex'
 
 	export default {
-		props: ["isActive2"],
+		props: ["searchIsActive"],
 		computed: mapState({
 			searchData: state => state.search.searchData
 		}),
@@ -44,31 +44,38 @@
 		min-height: 2.76rem;
 	}
 
-	.active2 {
+	.search-isActive {
 		display: block;
 	}
 
 	.search-list-header {
-		height: .64rem;
-		line-height: .64rem;
-		padding: 0 .2rem;
-		background-color: #f5f5f5;
+		position: relative;
+		height: .5rem;
+		border-bottom: 1px solid #cacaca;
+		background: #f3f3f3;
+		color: #555;
+		font-size: .24rem;
+		line-height: .5rem;
 	}
 
 	.search-list-title {
-		float: left;
-		font-size: .26rem;
-		color: #888;
+		margin-left: .3rem;
 	}
 
 	.clear-search-list {
-		float: right;
-		font-size: .26rem;
-		color: #888;
+		position: absolute;
+		top: 0;
+		right: 10px;
+		color: #555;
 	}
 
-	.search-list-scene {
-		color: #4ed01f;
+	.search-list-icon {
+		color: #36d08c;
+		position: relative;
+		top: -.05rem;
+		margin-right: .2rem;
+		width: .3rem;
+		height: .3rem;
 	}
 
 	.search-list {
@@ -79,9 +86,13 @@
 
 	.search-list-item {
 		height: .8rem;
+		padding: 0 .3rem;
+		border-bottom: 1px solid #ccc;
+		background: #fff;
+		color: #666;
+		font-size: .28rem;
 		line-height: .8rem;
-		background-color: #fff;
-		border-top: 1px solid #dce5e7;
+		text-align: left;
 	}
 
 </style>

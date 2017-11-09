@@ -1,5 +1,5 @@
 <template>
-	<div :class="{'hot-search-con':true, active:isActive}">
+	<div :class="{'hot-search-con':true, 'hot-list-Active':hotListIsActive}">
 		<div class="hot-list-header">
 			<h1 class="hot-list-title">热门搜索</h1>
 			<div class="hot-list-header-right" @click="batchChange">
@@ -38,9 +38,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="search-nearby-con" >
-			<div class="search-nearby-btn">搜索身边的景点</div>
-		</div>
+		<nearby-scene></nearby-scene>
 	</div>
 
 </template>
@@ -48,9 +46,13 @@
 <script>
 	import {AJAX_GET_DATA} from '../types'
 	import {mapState, mapActions} from 'vuex'
+	import NearbyScene from './NearbyScene'
 
 	export default {
-		props: ["isActive"],
+		props: ["hotListIsActive"],
+		components: {
+			"nearby-scene": NearbyScene
+		},
 		computed: mapState({
 			searchData: state => state.search.searchData
 		}),
@@ -99,7 +101,7 @@
 		height: 2.76rem;
 	}
 
-	.active {
+	.hot-list-Active {
 		display: block;
 	}
 
@@ -200,18 +202,6 @@
 		margin-top: .25rem;
 		margin-bottom: .25rem;
 	}
-	.search-nearby-con{
-		padding: .2rem;
-		background-color: #fff;
-	}
-	.search-nearby-btn{
-		height: .72rem;
-		line-height: .72rem;
-		background-color: #fff;
-		text-align: center;
-		font-size: .26rem;
-		color: #333;
-		border: 1px solid #dde1e3;
-		border-radius: 2px;
-	}
+
+
 </style>

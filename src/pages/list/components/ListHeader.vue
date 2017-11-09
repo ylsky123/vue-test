@@ -1,11 +1,13 @@
 <template>
-	<div>
+	<div >
 		<div>
 			<div class="search-header">
 				<router-link to="/" class="search-header-left iconfont icon-fanhui"
 				             @click="handleClick"></router-link>
 				<h1 class="search-header-title">
-					<input type="text" name="keyword" v-model="value" class="search-header-input" autocomplete="off" placeholder="输入城市或景点" v-focus @focus="focus()" @input="input()"/>
+					<input type="text" name="keyword" v-model="value" class="search-header-input"
+					       autocomplete="off" placeholder="输入城市或景点"
+					       @input="input()"/>
 					<i :class="{'delete':true,'iconfont':true,'icon-shanchu':true,'delete-active':deleteIsActive}"
 					   @click="deleteInput"></i>
 				</h1>
@@ -13,18 +15,26 @@
 					<a class="search-header-submit">搜索</a>
 				</span>
 			</div>
-			<hot-list :hotListIsActive="hotListIsActive"></hot-list>
-			<search-list :searchIsActive="searchIsActive" @clearInput="clearInput"></search-list>
 		</div>
-		<div class="hidden-div" @click="hiddenHotlist"></div>
+		<search-list :searchIsActive="searchIsActive" @clearInput="clearInput"></search-list>
+		<nearby-scene :sceneIsActive="sceneIsActive"></nearby-scene>
+		<list-filter :listFilterActive="listFilterActive"></list-filter>
 	</div>
 </template>
 
 <script>
-	import HotList from './HotList'
-	import SearchList from './SearchList'
+	import NearbyScene from './NearbyScene'
+	import SearchList from '../../search/components/SearchList'
+	import ListFilter from './ListFilter'
+
 
 	export default {
+		components: {
+			"nearby-scene": NearbyScene,
+			"search-list":SearchList,
+			"list-filter": ListFilter,
+		},
+
 		directives: {
 			focus: {
 				inserted: function (el) {
@@ -32,16 +42,14 @@
 				}
 			}
 		},
-		components: {
-			"hot-list": HotList,
-			"search-list": SearchList
-		},
+
 		data() {
 			return {
-				hotListIsActive: false,
+				sceneIsActive:false,
 				deleteIsActive: false,
 				searchIsActive: false,
-				value: ""
+				listFilterActive: false,
+				value: "北京"
 			}
 		},
 
@@ -49,34 +57,26 @@
 			handleClick() {
 				router.go(-1)
 			},
-			focus() {
-				if (this.value == "") {
-					this.hotListIsActive = true;
-					this.searchIsActive = false;
-				}
-
-			},
-			hiddenHotlist() {
-				this.isActive = false;
-			},
 			input() {
 				if (this.value == "") {
-					this.hotListIsActive = true;
+					this.sceneIsActive = true;
 					this.deleteIsActive = false;
 					this.searchIsActive = false;
 
 				} else {
-					this.hotListIsActive = false;
+					this.sceneIsActive = false;
 					this.deleteIsActive = true;
 					this.searchIsActive = true;
-
 				}
-
-
+				if(this.value == "北京") {
+					this.searchIsActive = false;
+				}else{
+					this.listFilterActive = true
+				}
 			},
 			deleteInput() {
 				this.value = "";
-				this.hotListIsActive = false;
+				this.sceneIsActive = false;
 				this.deleteIsActive = false;
 				this.searchIsActive = false;
 
@@ -86,16 +86,11 @@
 				this.deleteIsActive = false;
 				this.searchIsActive = false;
 			}
-
-
 		}
-
-
 	}
 </script>
 
 <style scoped>
-
 	.search-header {
 		position: relative;
 		display: flex;
@@ -173,8 +168,5 @@
 		text-align: center;
 	}
 
-	.hidden-div {
-		min-height: 100rem;
-		z-index: -1;
-	}
+
 </style>

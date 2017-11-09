@@ -6,8 +6,8 @@
 				<li :class="{ active1: isActive1, 'cities-tab':tab}" @click="handleTabClick">国际</li>
 			</ul>
 		</div>
-		<cities-internal v-if="show"></cities-internal>
-		<cities-overseas v-if="show1"></cities-overseas>
+		<cities-internal v-if="show" :citiesData="citiesData"></cities-internal>
+		<cities-overseas v-if="show1" :citiesData="citiesData"></cities-overseas>
 	</div>
 </template>
 
@@ -18,6 +18,7 @@
 	import {mapState, mapActions} from 'vuex'
 
 	export default {
+
 		data() {
 			return {
 				tab: true,
@@ -27,20 +28,36 @@
 				show1: false
 			}
 		},
+
 		components: {
 			"cities-internal": CitiesInternal,
 			"cities-overseas": CitiesOverseas
 		},
+		computed: mapState({
+			citiesData(state) {
+				return state.cities.citiesData
+			}
 
-
+		}),
+		mounted() {
+			!this.citiesData.length && this.getCitiesData()
+		},
 		methods: {
 			handleTabClick() {
 				this.show = !this.show;
 				this.show1 = !this.show1;
 				this.isActive = !this.isActive;
 				this.isActive1 = !this.isActive1;
-			}
+			},
+			...mapActions({
+				getCitiesData(dispatch) {
+					dispatch(AJAX_GET_DATA)
+				}
+			})
 		}
+
+
+
 
 	}
 </script>
