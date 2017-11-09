@@ -2,43 +2,45 @@
 	<div class="main-content">
 		<ul class="main-list">
 			<paginate name="list" :list="list" :per="per" ref="paginator">
-				<li class="main-item" v-for="item in paginated('list')" :key="item.id">
-					<div class="content-top">
-						<div class="main-picture">
-							<img class="main-img" :src="item.imgUrl" alt="">
-						</div>
-						<div class="main-detail">
-							<h3 class="main-place">{{item.name}}</h3>
-							<span class="main-hot">{{item.hot}}</span>
-							<span class="main-price">&yen
-									<em class="price-number">{{item.money}}</em>
-									<span class="main-text">&nbsp;起</span>
-								</span>
-							<div class="main-comments">
-								<span class="main-iconfont iconfont                                                                                                  icon-jinlingyingcaiwangtubiao29">
-								</span>
-								<span class="main-iconfont iconfont                                                                                                  icon-jinlingyingcaiwangtubiao29"></span>
-								<span class="main-iconfont iconfont                                                                                                  icon-jinlingyingcaiwangtubiao29"></span>
-								<span class="main-iconfont iconfont                                                                                                  icon-jinlingyingcaiwangtubiao29"></span>
-								<span class="main-iconfont iconfont                                                                                                  icon-jinlingyingcaiwangtubiao29"></span>
-								<span class="main-totalnum">144436评论</span>
+				<router-link to="/detail">
+					<li class="main-item" v-for="item in paginated('list')" :key="item.id">
+						<div class="content-top">
+							<div class="main-picture">
+								<img class="main-img" :src="item.imgUrl" alt="">
 							</div>
-							<div class="main-location">{{item.address}}</div>
+							<div class="main-detail">
+								<h3 class="main-place">{{item.name}}</h3>
+								<span class="main-hot">{{item.hot}}</span>
+								<span class="main-price">&yen
+										<em class="price-number">{{item.money}}</em>
+										<span class="main-text">&nbsp;起</span>
+									</span>
+								<div class="main-comments">
+									<span class="main-iconfont iconfont                                                                                                  icon-jinlingyingcaiwangtubiao29">
+									</span>
+									<span class="main-iconfont iconfont                                                                                                  icon-jinlingyingcaiwangtubiao29"></span>
+									<span class="main-iconfont iconfont                                                                                                  icon-jinlingyingcaiwangtubiao29"></span>
+									<span class="main-iconfont iconfont                                                                                                  icon-jinlingyingcaiwangtubiao29"></span>
+									<span class="main-iconfont iconfont                                                                                                  icon-jinlingyingcaiwangtubiao29"></span>
+									<span class="main-totalnum">144436评论</span>
+								</div>
+								<div class="main-location">{{item.address}}</div>
+							</div>
 						</div>
-					</div>
-					<div class="content-middle">
-						<h4 class="content-middle-title">{{item.ticketName}}</h4>
-						<span class="rmb-symbol">&yen
-								<em class="price-number">{{item.qunarprice}}</em>
-							</span>
-					</div>
-					<div class="content-middle">
-						<h4>{{item.ticketName2}}</h4>
-						<span class="rmb-symbol">&yen
-								<em class="price-number">{{item.qunarprice2}}</em>
-							</span>
-					</div>
-				</li>
+						<div class="content-middle">
+							<h4 class="content-middle-title">{{item.ticketName}}</h4>
+							<span class="rmb-symbol">&yen
+									<em class="price-number">{{item.qunarprice}}</em>
+								</span>
+						</div>
+						<div class="content-middle">
+							<h4>{{item.ticketName2}}</h4>
+							<span class="rmb-symbol">&yen
+									<em class="price-number">{{item.qunarprice2}}</em>
+								</span>
+						</div>
+					</li>
+				</router-link>
 			</paginate>
 			<div class="paginate-links">
 				<div :class="{'paginate-btn':true,'prev':prev,'paginate-active':paginateActivePrev}"
