@@ -26,8 +26,6 @@
 	export default {
 		props:["wrapperActive"],
 
-
-
 		updated(){
 			this.createIScroll()
 			this.firstListItemStyle()
