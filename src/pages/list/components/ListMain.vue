@@ -16,12 +16,7 @@
 										<span class="main-text">&nbsp;起</span>
 									</span>
 								<div class="main-comments">
-									<span class="main-iconfont iconfont                                                                                                  icon-jinlingyingcaiwangtubiao29">
-									</span>
-									<span class="main-iconfont iconfont                                                                                                  icon-jinlingyingcaiwangtubiao29"></span>
-									<span class="main-iconfont iconfont                                                                                                  icon-jinlingyingcaiwangtubiao29"></span>
-									<span class="main-iconfont iconfont                                                                                                  icon-jinlingyingcaiwangtubiao29"></span>
-									<span class="main-iconfont iconfont                                                                                                  icon-jinlingyingcaiwangtubiao29"></span>
+									<span class="main-iconfont iconfont                                                                                                  ">&#xe600;&#xe600;&#xe600;&#xe600;&#xe600;</span>
 									<span class="main-totalnum">144436评论</span>
 								</div>
 								<div class="main-location">{{item.address}}</div>
