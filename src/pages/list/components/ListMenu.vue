@@ -78,6 +78,7 @@
 	}
 	.list-menu-wrapper{
 		overflow: scroll;
+		overflow-y:hidden;
 		position: relative;
 		top:0;
 		left: 0;
