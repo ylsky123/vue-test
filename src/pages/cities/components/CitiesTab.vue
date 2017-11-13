@@ -40,7 +40,9 @@
 
 		}),
 		mounted() {
-			!this.citiesData.length && this.getCitiesData()
+			if(this.citiesData.length == 0){
+			 	this.getCitiesData()
+			}
 		},
 		methods: {
 			handleTabClick() {

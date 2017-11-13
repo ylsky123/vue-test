@@ -36,6 +36,7 @@
 		}),
 		mounted() {
 			!this.listMenu.length && this.getListData()
+			
 		},
 		methods: mapActions({
 			getListData: (dispatch) => {

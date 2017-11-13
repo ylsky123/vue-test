@@ -34,9 +34,13 @@
 		},
 		computed: mapState({
 			homeData: state => state.home.homeData
+
 		}),
 		mounted() {
-			!this.homeData.length && this.getHomeData()
+			if(this.homeData.length == 0) {
+				this.getHomeData()
+			}
+
 		},
 		methods: mapActions({
 			getHomeData: (dispatch) => {

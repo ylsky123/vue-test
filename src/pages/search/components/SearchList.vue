@@ -1,5 +1,5 @@
 <template>
-	<div :class="{'search-list-con':true, 'search-isActive':searchIsActive}">
+	<div :class="{'search-list-con':true, 'search-is-active':searchIsActive}">
 		<div class="search-list-header">
 			<h1 class="search-list-title">搜索建议</h1>
 			<span class="clear-search-list" @click="clearSearchList">关闭</span>
@@ -16,7 +16,7 @@
 <script>
 
 	import {AJAX_GET_DATA} from '../types'
-	import {mapState, mapActions} from 'vuex'
+	import {mapState,mapActions} from 'vuex'
 
 	export default {
 		props: ["searchIsActive"],
@@ -24,7 +24,9 @@
 			searchData: state => state.search.searchData
 		}),
 		mounted() {
-			!this.searchData.length && this.getSearchData()
+			if(this.searchData.length == 0) {
+				this.getSearchData()
+			}
 		},
 		methods: mapActions({
 			getSearchData: (dispatch) => {
@@ -44,7 +46,7 @@
 		min-height: 2.76rem;
 	}
 
-	.search-isActive {
+	.search-is-active {
 		display: block;
 	}
 

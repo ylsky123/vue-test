@@ -57,7 +57,9 @@
 			searchData: state => state.search.searchData
 		}),
 		mounted() {
-			!this.searchData.length && this.getSearchData()
+			if(this.searchData.length == 0) {
+				this.getSearchData()
+			}
 		},
 		methods: mapActions({
 			getSearchData: (dispatch) => {

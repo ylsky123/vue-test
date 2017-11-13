@@ -77,6 +77,7 @@
 		}),
 		mounted() {
 			!this.list.length && this.getListData()
+			
 		},
 		methods: mapActions({
 			getListData: (dispatch) => {
