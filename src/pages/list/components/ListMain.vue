@@ -38,11 +38,11 @@
 				</router-link>
 			</paginate>
 			<div class="paginate-links">
-				<div :class="{'paginate-btn':true,'prev':prev,'paginate-active':paginateActivePrev}"
+				<div :class="{'paginate-prev':true,'prev':prev,'paginate-active':paginateActivePrev}"
 				     @click="goToPrevPage">上一页
 				</div>
 				<span class="paginate-number">{{pageNumber}}</span>
-				<div :class="{'paginate-btn':true,'next':next,'paginate-active':paginateActive}"
+				<div :class="{'paginate-next':true,'next':next,'paginate-active':paginateActive}"
 				     @click="goToNextPage">下一页
 				</div>
 			</div>
@@ -266,19 +266,29 @@
 	}
 
 	.paginate-links {
-		padding: 0 2rem;
-		height: .7rem;
-		line-height: .7rem;
+		display: flex;
+		box-sizing: border-box;
+		width:100%;
+		padding:0 25%;
+		height: .6rem;
+		line-height: .6rem;
 	}
 
-	.paginate-btn {
-		display: inline-block;
+	.paginate-prev {
+		float: left;
 		width: 1.4rem;
 		color: #00afc7;
 		line-height: .6rem;
 		border-radius: .06rem;
 		text-align: center;
-
+	}
+	.paginate-next{
+		float: right;
+		width: 1.4rem;
+		color: #00afc7;
+		line-height: .6rem;
+		border-radius: .06rem;
+		text-align: center;
 	}
 
 	.prev {
@@ -301,9 +311,10 @@
 		border-radius: .06rem;
 	}
 	.paginate-number{
-		display: inline-block;
+		padding: 0 .1rem;
+		flex:1;
 		color: #212121;
 		line-height: .6rem;
-		padding: 0 .1rem;
+		text-align: center;
 	}
 </style>
